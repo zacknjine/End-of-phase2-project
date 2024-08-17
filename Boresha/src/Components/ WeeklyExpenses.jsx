@@ -62,27 +62,27 @@ const WeeklyExpenses = () => {
   };
 
   return (
-    <div className="p-4">
-      <form onSubmit={handleSubmit} className="bg-gray-100 rounded-lg shadow-md p-4 mb-4">
+    <div className="p-4 sm:p-6">
+      <form onSubmit={handleSubmit} className="bg-gray-100 rounded-lg shadow-md p-4 mb-4 space-y-4">
         <input
           type="text"
           value={expenseType}
           onChange={(e) => setExpenseType(e.target.value)}
           placeholder="Expense Type"
-          className="block w-full p-2 mb-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
+          className="block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
         />
         <input
           type="number"
           value={amountSpent}
           onChange={(e) => setAmountSpent(e.target.value)}
           placeholder="Amount Spent"
-          className="block w-full p-2 mb-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
+          className="block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
         />
         <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
       </form>
 
       <div>
-        <h2 className="text-lg font-bold mb-2">Weekly Expenses</h2>
+        <h2 className="text-lg sm:text-xl font-bold mb-2">Weekly Expenses</h2>
         <table className="w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-200">

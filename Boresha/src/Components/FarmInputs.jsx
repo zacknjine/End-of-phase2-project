@@ -77,30 +77,30 @@ const FarmInputs = () => {
   };
 
   return (
-    <div className="p-4">
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+    <div className="p-4 sm:p-6">
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-4 bg-gray-100 rounded-lg shadow-md p-4 mb-4">
         <input
           type="text"
           value={fertiliser}
           onChange={(e) => setFertiliser(e.target.value)}
-          className="border border-gray-300 p-2"
+          className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
           placeholder="Fertiliser"
         />
         <input
           type="number"
           value={kgBought}
           onChange={(e) => setKgBought(e.target.value)}
-          className="border border-gray-300 p-2"
+          className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
           placeholder="Kgs Bought"
         />
         <input
           type="number"
           value={amountBought}
           onChange={(e) => setAmountBought(e.target.value)}
-          className="border border-gray-300 p-2"
+          className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
           placeholder="Amount Bought"
         />
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
         {error && <p className="mt-2 text-red-500">{error}</p>}
       </form>
 
@@ -123,7 +123,7 @@ const FarmInputs = () => {
                 <td className="p-2">
                   <button
                     onClick={() => handleDelete(element.id)}
-                    className="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600"
+                    className="bg-red-500 text-white px-2 py-1 rounded-md hover:bg-red-600"
                   >
                     Delete
                   </button>
