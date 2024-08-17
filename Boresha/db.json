@@ -1,0 +1,48 @@
+{
+  "farm_inputs": [
+    {
+      "id": "e919",
+      "fertiliser": "fax",
+      "kgs_sold": "20",
+      "amount_sold": "200"
+    },
+    {
+      "id": "c739",
+      "fertiliser": "DAP",
+      "kgs_sold": "20",
+      "amount_sold": "3000"
+    },
+    {
+      "id": "49ef",
+      "fertiliser": "DAP",
+      "kgs_sold": "2",
+      "amount_sold": "300"
+    },
+    {
+      "id": "449c",
+      "fertiliser": "can",
+      "kgs_sold": "2",
+      "amount_sold": "28"
+    },
+    {
+      "id": "18aa",
+      "fertiliser": "CAN",
+      "kgs_sold": "15",
+      "amount_sold": "2000"
+    },
+    {
+      "id": "5cae",
+      "fertiliser": "can",
+      "kgs_bought": 20,
+      "amount_bought": 40000
+    },
+    {
+      "id": "4292",
+      "fertiliser": "can",
+      "kgs_bought": 20,
+      "amount_bought": 200
+    }
+  ],
+  "weekly_expense": [],
+  "weekly_kilos": []
+}
