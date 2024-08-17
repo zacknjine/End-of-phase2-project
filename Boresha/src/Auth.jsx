@@ -12,23 +12,23 @@ const Auth = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(''); // Clear any previous errors
+    setError(''); 
 
     try {
       if (isSignUp) {
-        // Sign up user
+        
         await createUserWithEmailAndPassword(auth, email, password);
-        navigate('/signin'); // Redirect to Sign-In page after successful sign-up
+        navigate('/signin'); 
       } else {
-        // Sign in user
+        
         await signInWithEmailAndPassword(auth, email, password);
-        navigate('/'); // Redirect to Home page or another page after successful sign-in
+        navigate('/'); 
       }
-      setEmail(''); // Clear form fields
+      setEmail(''); 
       setPassword('');
     } catch (error) {
       console.error("Authentication error: ", error);
-      setError(error.message); // Display the error message
+      setError(error.message); 
     }
   };
 

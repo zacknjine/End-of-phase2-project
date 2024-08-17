@@ -41,8 +41,26 @@
       "fertiliser": "can",
       "kgs_bought": 20,
       "amount_bought": 200
+    },
+    {
+      "id": "98f8",
+      "fertiliser": "DAP",
+      "kgs_bought": 30,
+      "amount_bought": 2000
     }
   ],
-  "weekly_expense": [],
-  "weekly_kilos": []
+  "weekly_expense": [
+    {
+      "id": "ed33",
+      "expense_type": "paid 2 workers",
+      "amount_spent": "1000"
+    }
+  ],
+  "weekly_kilos": [
+    {
+      "id": "04b9",
+      "kilos_rejected": 2,
+      "kilos_sold": 20
+    }
+  ]
 }

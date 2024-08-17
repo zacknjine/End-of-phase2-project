@@ -5,7 +5,7 @@ const WeeklyExpenses = () => {
   const [amountSpent, setAmountSpent] = useState('');
   const [expenses, setExpenses] = useState([]);
 
-  // Fetch weekly expenses data from the server
+  
   useEffect(() => {
     const fetchWeeklyExpenses = async () => {
       try {
@@ -36,7 +36,7 @@ const WeeklyExpenses = () => {
     })
     .then(response => response.json())
     .then(data => {
-      setExpenses([...expenses, data]); // Update expenses with the new data
+      setExpenses([...expenses, data]); 
     })
     .catch(error => console.error(error));
 
@@ -54,7 +54,7 @@ const WeeklyExpenses = () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      // Remove the deleted expense from the state
+      
       setExpenses(expenses.filter(expense => expense.id !== id));
     } catch (error) {
       console.error("Error deleting expense:", error);
@@ -88,7 +88,7 @@ const WeeklyExpenses = () => {
             <tr className="bg-gray-200">
               <th className="p-2">Expense Type</th>
               <th className="p-2">Amount Spent</th>
-              <th className="p-2">Actions</th> {/* New column for actions */}
+              <th className="p-2">Actions</th> 
             </tr>
           </thead>
           <tbody>
@@ -104,7 +104,7 @@ const WeeklyExpenses = () => {
                     >
                       Delete
                     </button>
-                  </td> {/* Action column with delete button */}
+                  </td>
                 </tr>
               ))
             ) : (

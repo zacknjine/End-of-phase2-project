@@ -5,7 +5,7 @@ const Cards = () => {
     <div className= "bg-[#1b3838] text-white py-3 px-3">
       <div className= "container">
         <div className= "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-          {/* First Column (Our Story) */}
+        
           <div className= "bg-dark/50 flex items-center justify-center">
             <div className= "text-center p-4 bg-dark h-full flex flex-col justify-center">
               <h1 className= "text-2xl font-bold">Our Story</h1>
@@ -18,7 +18,7 @@ const Cards = () => {
             </div>
           </div>
           
-          {/* Second Column (Our Values) */}
+      
           <div className= "h-full">
             <div className= "text-center p-4 bg-dark h-full flex flex-col justify-center">
               <h1 className= "text-2xl font-bold">Our Values</h1>

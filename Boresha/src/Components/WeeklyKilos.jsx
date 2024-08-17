@@ -6,7 +6,7 @@ const WeeklyKilos = () => {
   const [kilosData, setKilosData] = useState([]);
   const [error, setError] = useState(null);
 
-  // Fetch weekly kilos data from the server
+
   useEffect(() => {
     const fetchWeeklyKilos = async () => {
       try {
@@ -33,7 +33,7 @@ const WeeklyKilos = () => {
       return;
     }
 
-    setError(null); // Clear previous errors
+    setError(null); 
 
     try {
       const response = await fetch('http://localhost:3002/weekly_kilos', {
@@ -103,7 +103,7 @@ const WeeklyKilos = () => {
             <tr className="bg-gray-200">
               <th className="p-2">Kilos Sold</th>
               <th className="p-2">Kilos Rejected</th>
-              <th className="p-2">Actions</th> {/* Added Actions column */}
+              <th className="p-2">Actions</th>
             </tr>
           </thead>
           <tbody>

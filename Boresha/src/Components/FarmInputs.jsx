@@ -33,7 +33,7 @@ const FarmInputs = () => {
       return;
     }
 
-    setError(null); // Clear previous errors
+    setError(null); 
 
     try {
       const response = await fetch('http://localhost:3002/farm_inputs', {
@@ -110,7 +110,7 @@ const FarmInputs = () => {
             <th className="p-2">Fertiliser</th>
             <th className="p-2">Kgs Bought</th>
             <th className="p-2">Amount Bought</th>
-            <th className="p-2">Actions</th> {/* Added Actions column */}
+            <th className="p-2">Actions</th> 
           </tr>
         </thead>
         <tbody>
