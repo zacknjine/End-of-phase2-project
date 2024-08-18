@@ -31,6 +31,8 @@ json-server --watch db.json port 3002
 Run cd Boresha
 
 2. **Start the localhost** by running:
+     npm install  
+     ......then
      npm run dev
 
 ### HAVE FUN CODING!!
