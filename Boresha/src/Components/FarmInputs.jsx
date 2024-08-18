@@ -13,7 +13,7 @@ const FarmInputs = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:3000/farm_inputs');
+      const response = await fetch('http://localhost:3002/farm_inputs');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

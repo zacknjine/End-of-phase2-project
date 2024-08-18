@@ -41,7 +41,7 @@ const App = () => {
         <Route path="/weekly-expenses" element={<WeeklyExpenses />} />
         <Route path="/farm-inputs" element={<FarmInputs />} />
         <Route path="/weekly-kilos" element={<WeeklyKilos />} />
-        <Route path="*" element={<Home />} /> {/* Catch-all route */}
+        <Route path="/home" element={<Home />} /> {/* Catch-all route */}
       </Routes>
     </Router>
   );
