@@ -36,3 +36,6 @@ Run cd Boresha
      npm run dev
 
 ### HAVE FUN CODING!!
+
+Blog.
+https://hashnode.com/edit/clzzvb0wc000109lbbbpa5xju
